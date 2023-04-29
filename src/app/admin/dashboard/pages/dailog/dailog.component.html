@@ -1,0 +1,60 @@
+<a mat-icon-button class="close-button" [mat-dialog-close]="true">
+  <mat-icon>close</mat-icon>
+</a>
+
+<mat-card class="matCard">
+
+  <mat-card-content class="mt-4">
+    <!--filter table-->
+    <form>
+      <div class="table-responsive-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9 table-responsive-sm">
+              <mat-form-field>
+                <mat-label>Topic </mat-label>
+                <mat-select  placeholder="Select Year:"
+                formControlName="surveyYear" >
+                  
+                  <mat-option
+                   *ngFor="let item of surveyYearOption
+                    " [value]="item.surveyYear">
+                  {{item.surveyYear}}</mat-option>
+                </mat-select>
+
+              </mat-form-field>
+            </div>
+            <div class="col-sm-3 table-responsive-sm">
+              <div class="table  table-borderless d-flex justify-content-end">
+                <tr class="row">
+                  <td>
+                    <div class="d-flex justify-content-end">
+                      <mat-card-actions>
+                        <button mat-raised-button color="primary" type="submit">Show</button>
+                        <span></span>
+                        <button mat-raised-button color="secondary" type="reset">Reset</button>
+                      </mat-card-actions>
+                    </div>
+                  </td>
+                </tr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+
+<!-- angular material autocomplete  -->
+<!-- <form>
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" />
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let option of objectOptions" [value]="option">
+{{option.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form> -->

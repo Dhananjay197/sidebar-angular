@@ -1,0 +1,32 @@
+
+    <mat-grid-list cols="7" rowHeight="100px">
+        <mat-grid-tile  colspan="1" style="background-color: rgb(218, 182, 182); border-bottom: 2px solid #5f9ea0; font-weight: bold;">Id</mat-grid-tile>
+        <mat-grid-tile colspan="2"  style="background-color: rgb(218, 182, 182); border-bottom: 2px solid #5f9ea0; font-weight: bold;">Title</mat-grid-tile>
+        <mat-grid-tile colspan="3" style="background-color: rgb(218, 182, 182); border-bottom: 2px solid #5f9ea0; font-weight: bold;">Body</mat-grid-tile>
+        <mat-grid-tile colspan="1" style="background-color: rgb(218, 182, 182); border-bottom: 2px solid #5f9ea0; font-weight: bold;">User Id</mat-grid-tile>
+
+      </mat-grid-list >
+      <mat-grid-list cols="7" rowHeight="100px" *ngFor="let item of data">
+        <mat-grid-tile  colspan="1" style="background-color: rgb(218, 182, 182); border-bottom: 1px solid #5f9ea0">{{item.id}}</mat-grid-tile>
+        <mat-grid-tile colspan="2"  style="background-color: rgb(218, 182, 182); border-bottom: 1px solid #5f9ea0">{{item.title}}</mat-grid-tile>
+        <mat-grid-tile colspan="3" style="background-color: rgb(218, 182, 182); border-bottom: 1px solid #5f9ea0">{{item.body}}</mat-grid-tile>
+        <mat-grid-tile colspan="1" style="background-color: rgb(218, 182, 182); border-bottom: 1px solid #5f9ea0">{{item.userId}}</mat-grid-tile>
+
+      </mat-grid-list>
+     <!-- <table border="2">
+      <tr>
+        <td>Id</td>
+        <td>Tittle</td>
+        <td>Body</td>
+        <td>User Id</td>
+      </tr>
+      <tr *ngFor="let item of data">
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.body}}</td>
+        <td>{{item.userId}}</td>
+      </tr>
+     </table> -->
+
+      
+
