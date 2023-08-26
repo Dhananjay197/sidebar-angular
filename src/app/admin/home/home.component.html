@@ -1,3 +1,54 @@
+<div class="top-header">
+    <div class="container-fluid">
+        <div class="row" style="padding: 0px 61px 0px 60px">
+            <div class="col-md-6">
+                <div class="header-contact">
+                    <ul>
+                        <li>
+                            Welcome to Our Store Multikart
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            Call Us: 123 - 456 - 7890
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex" style="justify-content: flex-end;"  >
+                <div class="header-dropdown">
+                    <ul >
+                        <li class="compare">
+                            <a href="#" class="comparelist">
+                                <i class="fa fa-random" aria-hidden="true"></i>
+                                Compare
+                            </a>
+                            
+                        </li>
+                        <li class="compare">
+                            <a href="#" class="comparelist">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                Wishlist
+                            </a>
+                            
+                        </li>
+                        <li class="compare dropdown-head">
+                            <a href="#" class="comparelists">
+                                <i class="fa fa-user user" aria-hidden="true"></i>
+                                My Account
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown sub-menubar">
+                                <li><a href="" class="">Login</a></li>
+                                <li><a href="" class="">Register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 <mat-sidenav-container class="">
     <mat-sidenav #sidebar mode="side" opened="">
         <app-sidebar></app-sidebar>
@@ -7,12 +58,13 @@
             <div class="toolbar">
                 <mat-toolbar>
                     <mat-icon (click)="sidebar.toggle()">menu</mat-icon>
-                    <div class="box">
-                        <mat-icon>search</mat-icon>
-                        <mat-icon>bookmark_border</mat-icon>
-                        <mat-icon>mail_outline</mat-icon>
-                        <mat-icon>comment</mat-icon>
-
+                    
+                       <div class="logo m-5">
+                        <a href="" class="">
+                            <img src="../../../assets/_images/logo-14.png" alt="logo" class="img-fluid" />
+                        </a>
+                       
+                       
                     </div>
                 </mat-toolbar>
 

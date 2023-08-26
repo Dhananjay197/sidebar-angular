@@ -35,7 +35,11 @@ $sliderbar-theme: mat.define-light-theme((
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0;
+   font-family: Roboto, "Helvetica Neue", sans-serif;
+  ul{
+    margin-bottom: 0 !important;
+  } }
 
 .mat-grid-tile-content {
   text-align: justify !important;
